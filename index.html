@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy Bear - My Beloved Toy</title>
+    <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f9f8.svg">
+    <meta name="description" content="A beautiful tribute to Teddy Bear, the most cherished childhood toy that brought comfort, adventure, and endless love." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            line-height: 1.5;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: linear-gradient(to bottom right, #fef7ed, #fdedd3, #e7dcc5);
+            color: #111827;
+            min-height: 100vh;
+        }
+        
+        /* Color Variables */
+        :root {
+            --honey-50: #fef7ed;
+            --honey-100: #fdedd3;
+            --honey-200: #fbd7a5;
+            --honey-300: #f8bc6d;
+            --honey-400: #f59932;
+            --honey-500: #f28110;
+            --honey-600: #e36906;
+            --honey-700: #bc4f08;
+            --honey-800: #973f0e;
+            --honey-900: #7c350f;
+            
+            --cocoa-50: #faf8f3;
+            --cocoa-100: #f4efe3;
+            --cocoa-200: #e7dcc5;
+            --cocoa-300: #d6c29e;
+            --cocoa-400: #c4a575;
+            --cocoa-500: #b6905a;
+            --cocoa-600: #a67c4e;
+            --cocoa-700: #8a6442;
+            --cocoa-800: #70523b;
+            --cocoa-900: #5b4331;
+            
+            --cream-50: #fefdf9;
+            --cream-100: #fdf9f0;
+            --cream-200: #fbf2de;
+            --cream-300: #f7e6c2;
+            --cream-400: #f1d49c;
+            --cream-500: #eabe6e;
+            --cream-600: #dfa448;
+            --cream-700: #c68b37;
+            --cream-800: #a36f30;
+            --cream-900: #855b2c;
+        }
+        
+        /* Font Families */
+        .font-fredoka {
+            font-family: 'Fredoka', sans-serif;
+        }
+        
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* Layout */
+        .flex {
+            display: flex;
+        }
+        
+        .grid {
+            display: grid;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .items-center {
+            align-items: center;
+        }
+        
+        .justify-center {
+            justify-content: center;
+        }
+        
+        .justify-between {
+            justify-content: space-between;
+        }
+        
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+        
+        .grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        
+        .grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+        
+        .gap-6 {
+            gap: 1.5rem;
+        }
+        
+        .gap-8 {
+            gap: 2rem;
+        }
+        
+        .gap-12 {
+            gap: 3rem;
+        }
+        
+        .space-x-2 > * + * {
+            margin-left: 0.5rem;
+        }
+        
+        .space-x-4 > * + * {
+            margin-left: 1rem;
+        }
+        
+        .space-x-6 > * + * {
+            margin-left: 1.5rem;
+        }
+        
+        .space-x-8 > * + * {
+            margin-left: 2rem;
+        }
+        
+        .space-y-4 > * + * {
+            margin-top: 1rem;
+        }
+        
+        .space-y-6 > * + * {
+            margin-top: 1.5rem;
+        }
+        
+        .space-y-8 > * + * {
+            margin-top: 2rem;
+        }
+        
+        /* Responsive Grid */
+        @media (min-width: 768px) {
+            .md-grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            
+            .md-grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+            
+            .md-flex {
+                display: flex;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .lg-grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            
+            .lg-grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+        
+        /* Spacing */
+        .p-4 {
+            padding: 1rem;
+        }
+        
+        .p-6 {
+            padding: 1.5rem;
+        }
+        
+        .p-8 {
+            padding: 2rem;
+        }
+        
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        
+        .px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        
+        .py-6 {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        
+        .py-12 {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        
+        .py-16 {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        
+        .py-20 {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        
+        .pt-8 {
+            padding-top: 2rem;
+        }
+
+        .pt-12 {
+            padding-top: 3rem;
+        }
+        
+        .pt-20 {
+            padding-top: 5rem;
+        }
+        
+        .pt-24 {
+            padding-top: 6rem;
+        }
+
+        .pb-8 {
+            padding-bottom: 2rem;
+        }
+
+        .pb-16 {
+            padding-bottom: 4rem;
+        }
+        
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .mb-3 {
+            margin-bottom: 0.75rem;
+        }
+        
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+        
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+        
+        .mb-16 {
+            margin-bottom: 4rem;
+        }
+        
+        .mr-2 {
+            margin-right: 0.5rem;
+        }
+        
+        .mt-8 {
+            margin-top: 2rem;
+        }
+        
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Typography */
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+        
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+        
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+        
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+        
+        .text-5xl {
+            font-size: 3rem;
+            line-height: 1;
+        }
+        
+        .text-6xl {
+            font-size: 3.75rem;
+            line-height: 1;
+        }
+        
+        @media (min-width: 1024px) {
+            .lg-text-6xl {
+                font-size: 3.75rem;
+                line-height: 1;
+            }
+            
+            .lg-text-7xl {
+                font-size: 4.5rem;
+                line-height: 1;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .text-6xl {
+                font-size: 3rem;
+                line-height: 1;
+            }
+            
+            .text-5xl {
+                font-size: 2.5rem;
+                line-height: 1;
+            }
+        }
+        
+        .font-bold {
+            font-weight: 700;
+        }
+        
+        .font-semibold {
+            font-weight: 600;
+        }
+        
+        .font-medium {
+            font-weight: 500;
+        }
+        
+        .leading-tight {
+            line-height: 1.25;
+        }
+        
+        .leading-relaxed {
+            line-height: 1.625;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-white {
+            color: #ffffff;
+        }
+        
+        /* Colors */
+        .text-cocoa-800 {
+            color: var(--cocoa-800);
+        }
+        
+        .text-cocoa-700 {
+            color: var(--cocoa-700);
+        }
+        
+        .text-cocoa-600 {
+            color: var(--cocoa-600);
+        }
+        
+        .text-cocoa-400 {
+            color: var(--cocoa-400);
+        }
+        
+        .text-cocoa-300 {
+            color: var(--cocoa-300);
+        }
+        
+        .text-honey-600 {
+            color: var(--honey-600);
+        }
+        
+        .text-honey-700 {
+            color: var(--honey-700);
+        }
+        
+        .text-honey-800 {
+            color: var(--honey-800);
+        }
+        
+        .text-honey-400 {
+            color: var(--honey-400);
+        }
+        
+        .text-cream-100 {
+            color: var(--cream-100);
+        }
+        
+        .bg-white {
+            background-color: #ffffff;
+        }
+        
+        .bg-honey-500 {
+            background-color: var(--honey-500);
+        }
+        
+        .bg-honey-100 {
+            background-color: var(--honey-100);
+        }
+        
+        .bg-honey-200 {
+            background-color: var(--honey-200);
+        }
+        
+        .bg-honey-300 {
+            background-color: var(--honey-300);
+        }
+        
+        .bg-cream-300 {
+            background-color: var(--cream-300);
+        }
+        
+        .bg-cocoa-300 {
+            background-color: var(--cocoa-300);
+        }
+        
+        .bg-cocoa-800 {
+            background-color: var(--cocoa-800);
+        }
+        
+        /* Background gradients */
+        .bg-gradient-hero {
+            background: linear-gradient(to right, rgba(253, 237, 211, 0.5), rgba(253, 249, 240, 0.5));
+        }
+        
+        .bg-gradient-honey {
+            background: linear-gradient(to bottom right, var(--honey-200), var(--cream-200));
+        }
+        
+        .bg-gradient-cream {
+            background: linear-gradient(to bottom right, var(--cream-200), var(--honey-200));
+        }
+        
+        .bg-gradient-cocoa {
+            background: linear-gradient(to bottom right, var(--cocoa-200), var(--honey-200));
+        }
+        
+        .bg-gradient-cta {
+            background: linear-gradient(to right, var(--honey-500), var(--cocoa-500));
+        }
+        
+        .bg-gradient-memories {
+            background: linear-gradient(to right, var(--honey-100), var(--cream-100));
+        }
+        
+        /* Backdrop and transparency */
+        .backdrop-blur-md {
+            backdrop-filter: blur(12px);
+        }
+        
+        .bg-white-80 {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .bg-white-70 {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .bg-white-50 {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .bg-white-10 {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .bg-black-10 {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        .bg-black-50 {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Borders and Rounded */
+        .border-b {
+            border-bottom-width: 1px;
+        }
+        
+        .border-2 {
+            border-width: 2px;
+        }
+        
+        .border-honey-200 {
+            border-color: var(--honey-200);
+        }
+        
+        .border-honey-300 {
+            border-color: var(--honey-300);
+        }
+        
+        .border-cocoa-700 {
+            border-color: var(--cocoa-700);
+        }
+        
+        .rounded-full {
+            border-radius: 9999px;
+        }
+        
+        .rounded-3xl {
+            border-radius: 1.5rem;
+        }
+        
+        .rounded-2xl {
+            border-radius: 1rem;
+        }
+        
+        .rounded-xl {
+            border-radius: 0.75rem;
+        }
+        
+        /* Sizing */
+        .w-full {
+            width: 100%;
+        }
+        
+        .w-16 {
+            width: 4rem;
+        }
+        
+        .w-12 {
+            width: 3rem;
+        }
+        
+        .w-8 {
+            width: 2rem;
+        }
+        
+        .w-5 {
+            width: 1.25rem;
+        }
+        
+        .w-4 {
+            width: 1rem;
+        }
+        
+        .h-16 {
+            height: 4rem;
+        }
+        
+        .h-12 {
+            height: 3rem;
+        }
+        
+        .h-8 {
+            height: 2rem;
+        }
+        
+        .h-5 {
+            height: 1.25rem;
+        }
+        
+        .h-4 {
+            height: 1rem;
+        }
+        
+        .h-600 {
+            height: 592px;
+        }
+        
+        .h-48 {
+            height: 12rem;
+        }
+        
+        .h-32 {
+            height: 8rem;
+        }
+
+        .h-64 {
+            height: 16rem;
+        }
+
+        .max-w-lg {
+            max-width: 32rem;
+        }
+        
+        .max-w-2xl {
+            max-width: 42rem;
+        }
+        
+        .max-w-3xl {
+            max-width: 48rem;
+        }
+        
+        .max-w-4xl {
+            max-width: 56rem;
+        }
+        
+        .min-h-80vh {
+            min-height: 80vh;
+        }
+        
+        /* Aspect and Object */
+        .aspect-square {
+            aspect-ratio: 1 / 1;
+        }
+        
+        .object-cover {
+            object-fit: cover;
+        }
+        
+        .overflow-hidden {
+            overflow: hidden;
+        }
+        
+        /* Positioning */
+        .fixed {
+            position: fixed;
+        }
+        
+        .relative {
+            position: relative;
+        }
+        
+        .absolute {
+            position: absolute;
+        }
+        
+        .top-0 {
+            top: 0;
+        }
+        
+        .z-50 {
+            z-index: 50;
+        }
+        
+        .z-10 {
+            z-index: 10;
+        }
+        
+        .inset-0 {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .-top-4 {
+            top: -1rem;
+        }
+        
+        .-right-4 {
+            right: -1rem;
+        }
+        
+        .-bottom-8 {
+            bottom: -2rem;
+        }
+        
+        .-left-8 {
+            left: -2rem;
+        }
+        
+        .-right-8 {
+            right: -2rem;
+        }
+        
+        .top-third {
+            top: 33.333333%;
+        }
+        
+        .top-10 {
+            top: 2.5rem;
+        }
+        
+        .left-10 {
+            left: 2.5rem;
+        }
+        
+        .bottom-10 {
+            bottom: 2.5rem;
+        }
+        
+        .right-10 {
+            right: 2.5rem;
+        }
+        
+        .left-20 {
+            left: 5rem;
+        }
+        
+        .top-half {
+            top: 50%;
+        }
+        
+        /* Shadows */
+        .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .shadow-xl {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .shadow-2xl {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Transforms and Animations */
+        .transition-colors {
+            transition-property: color, background-color, border-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .transition-all {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .transition-transform {
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .transition-opacity {
+            transition-property: opacity;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .duration-200 {
+            transition-duration: 200ms;
+        }
+        
+        .duration-300 {
+            transition-duration: 300ms;
+        }
+        
+        .duration-500 {
+            transition-duration: 500ms;
+        }
+        
+        /* Hover effects */
+        .hover-bg-honey-600:hover {
+            background-color: var(--honey-600);
+        }
+        
+        .hover-text-honey-600:hover {
+            color: var(--honey-600);
+        }
+        
+        .hover-text-honey-400:hover {
+            color: var(--honey-400);
+        }
+        
+        .hover-bg-cream-50:hover {
+            background-color: var(--cream-50);
+        }
+        
+        .hover-bg-honey-50:hover {
+            background-color: var(--honey-50);
+        }
+        
+        .hover-shadow-xl:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .hover-scale-105:hover {
+            transform: scale(1.05);
+        }
+        
+        .hover-scale-103:hover {
+            transform: scale(1.03);
+        }
+
+        .hover-translate-y-minus-2:hover {
+            transform: translateY(-0.5rem);
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes bounce-gentle {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+        }
+        
+        @keyframes fade-in-up {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes scale-in {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .animate-bounce-gentle {
+            animation: bounce-gentle 2s ease-in-out infinite;
+        }
+        
+        .animate-wiggle {
+            animation: wiggle 1s ease-in-out infinite;
+        }
+        
+        .animate-fade-in-up {
+            animation: fade-in-up 0.6s ease-out;
+        }
+        
+        .animate-scale-in {
+            animation: scale-in 0.5s ease-out;
+        }
+        
+        .opacity-60 {
+            opacity: 0.6;
+        }
+        
+        .opacity-50 {
+            opacity: 0.5;
+        }
+        
+        .opacity-40 {
+            opacity: 0.4;
+        }
+        
+        .opacity-90 {
+            opacity: 0.9;
+        }
+        
+        .opacity-0 {
+            opacity: 0;
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+        
+        .btn-primary {
+            background-color: var(--honey-500);
+            color: #ffffff;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--honey-600);
+            transform: scale(1.05);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--honey-300);
+            color: var(--honey-700);
+            background-color: transparent;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--honey-50);
+        }
+        
+        .btn-white {
+            background-color: #ffffff;
+            color: var(--honey-600);
+        }
+        
+        .btn-white:hover {
+            background-color: var(--cream-50);
+            transform: scale(1.05);
+        }
+        
+        .btn-white-outline {
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            background-color: transparent;
+        }
+        
+        .btn-white-outline:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Card Styles */
+        .card {
+            background: linear-gradient(to bottom right, var(--honey-50), var(--cream-50));
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: translateY(-0.5rem);
+        }
+        
+        .card-cream {
+            background: linear-gradient(to bottom right, var(--cream-50), var(--honey-50));
+        }
+        
+        .card-cocoa {
+            background: linear-gradient(to bottom right, var(--cocoa-50), var(--honey-50));
+        }
+        
+        /* Badge */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--honey-100);
+            color: var(--honey-800);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        /* Icon container */
+        .icon-container {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+        }
+        
+        .icon-container-honey {
+            background-color: var(--honey-200);
+        }
+        
+        .icon-container-cream {
+            background-color: var(--cream-200);
+        }
+        
+        .icon-container-cocoa {
+            background-color: var(--cocoa-200);
+        }
+        
+        /* Memory card */
+        .memory-card {
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(4px);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Gallery item */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+            opacity: 0;
+            transition: opacity 300ms;
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-content {
+            padding: 1rem;
+            color: white;
+        }
+        
+        /* Placeholder content */
+        .placeholder-content {
+            width: 102%;
+            height: 100%;
+            background: linear-gradient(to bottom right, var(--honey-300), var(--cream-300));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Navigation styles */
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--honey-200);
+        }
+        
+        nav a {
+            color: var(--cocoa-700);
+            text-decoration: none;
+            transition: color 150ms;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            color: var(--honey-600);
+        }
+        
+        /* Responsive flex direction */
+        .flex-col {
+            flex-direction: column;
+        }
+        
+        .flex-row {
+            flex-direction: row;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        @media (min-width: 640px) {
+            .hero-buttons {
+                flex-direction: row;
+            }
+            
+            .cta-buttons {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body class="font-inter">
+    <div style="min-height: 100vh;">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full z-50">
+            <div class="container py-4">
+                <div class="flex justify-between items-center">
+                    <div class="font-fredoka text-2xl font-bold text-cocoa-800">
+                        🧸 Teddy Bear
+                    </div>
+                    <div class="hidden md-flex space-x-8">
+                        <a href="#home">Home</a>
+                        <a href="#story">Story</a>
+                        <a href="#memories">Memories</a>
+                        <a href="#gallery">Gallery</a>
+                    </div>
+                    <button class="btn btn-primary font-fredoka">
+                        Share Your Toy
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="pt-24 pb-16 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-hero"></div>
+            <div class="container relative">
+                <div class="grid lg-grid-cols-2 gap-12 items-center min-h-80vh">
+                    <div class="space-y-8 animate-fade-in-up">
+                        <div class="space-y-4">
+                            <div class="badge">
+                                <i data-lucide="star" class="w-4 h-4 mr-2"></i>
+                                <span>Childhood's Greatest Companion</span>
+                            </div>
+                            <h1 class="text-6xl lg-text-7xl font-fredoka font-bold text-cocoa-800 leading-tight">
+                                Meet
+                                <span class="text-honey-600" style="display: block;">Teddy Bear</span>
+                            </h1>
+                            <p class="text-xl text-cocoa-600 leading-relaxed max-w-lg">
+                                The most beloved teddy bear who turned ordinary moments into extraordinary adventures, 
+                                bringing comfort, joy, and endless cuddles to a childhood filled with wonder.
+                            </p>
+                        </div>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary font-fredoka">
+                                <i data-lucide="heart" class="w-5 h-5 mr-2"></i>
+                                Discover the Magic
+                            </button>
+                            <button class="btn btn-outline font-fredoka">
+                                Watch the Story
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative animate-scale-in">
+                        <div class="relative z-10">
+                            <div class="w-full h-600 bg-gradient-honey rounded-3xl shadow-2xl overflow-hidden hover-scale-103 transition-transform duration-500">
+                                <img 
+                                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/570/original/StockCake-Cuddly_Teddy_Bear_1748126150.jpg?1748126160" 
+                                    alt="Teddy Bear - A beloved golden teddy bear"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
+                        <!-- Floating elements -->
+                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-honey-300 rounded-full animate-float opacity-60"></div>
+                        <div class="absolute -bottom-8 -left-8 w-12 h-12 bg-cream-300 rounded-full animate-bounce-gentle opacity-40"></div>
+                        <div class="absolute top-third -right-8 w-8 h-8 bg-cocoa-300 rounded-full animate-wiggle opacity-50"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section id="story" class="py-20 bg-white-50">
+            <div class="container">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-fredoka font-bold text-cocoa-800 mb-6">
+                        A Story of Love & Adventure
+                    </h2>
+                    <p class="text-xl text-cocoa-600 max-w-3xl mx-auto leading-relaxed">
+                        Every beloved toy has a story. Teddy Bear's journey began on a magical Christmas morning 
+                        and continued through countless bedtime stories, tea parties, and secret adventures.
+                    </p>
+                </div>
+                
+                <div class="grid md-grid-cols-3 gap-8">
+                    <div class="card p-8">
+                        <div class="icon-container icon-container-honey">
+                            <i data-lucide="gift" class="w-8 h-8" style="color: var(--honey-600);"></i>
+                        </div>
+                        <h3 class="text-2xl font-fredoka font-bold text-cocoa-800 text-center mb-4">
+                            Christmas Magic
+                        </h3>
+                        <p class="text-cocoa-600 text-center leading-relaxed">
+                            The moment those little eyes first met Teddy Bear under the Christmas tree, 
+                            a lifelong friendship was born. Wrapped in golden paper, this teddy was destined for greatness.
+                        </p>
+                    </div>
+
+                    <div class="card card-cream p-8">
+                        <div class="icon-container icon-container-cream">
+                            <i data-lucide="star" class="w-8 h-8" style="color: var(--cream-600);"></i>
+                        </div>
+                        <h3 class="text-2xl font-fredoka font-bold text-cocoa-800 text-center mb-4">
+                            Daily Adventures
+                        </h3>
+                        <p class="text-cocoa-600 text-center leading-relaxed">
+                            From tea parties in the garden to brave expeditions under the bed, 
+                            Teddy Bear was always ready for the next adventure, no matter how big or small.
+                        </p>
+                    </div>
+
+                    <div class="card card-cocoa p-8">
+                        <div class="icon-container icon-container-cocoa">
+                            <i data-lucide="heart" class="w-8 h-8" style="color: var(--cocoa-600);"></i>
+                        </div>
+                        <h3 class="text-2xl font-fredoka font-bold text-cocoa-800 text-center mb-4">
+                            Comfort & Joy
+                        </h3>
+                        <p class="text-cocoa-600 text-center leading-relaxed">
+                            Through every nightmare, every scraped knee, and every moment of doubt, 
+                            Teddy Bear provided the comfort and courage that only a true friend could offer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memories Section -->
+        <section id="memories" class="py-20 bg-gradient-memories">
+            <div class="container">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-fredoka font-bold text-cocoa-800 mb-6">
+                        Treasured Memories
+                    </h2>
+                    <p class="text-xl text-cocoa-600 max-w-3xl mx-auto">
+                        Each memory with Teddy Bear is a precious chapter in the story of growing up, 
+                        filled with laughter, imagination, and unconditional love.
+                    </p>
+                </div>
+
+                <div class="grid lg-grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8">
+                        <div class="memory-card">
+                            <h3 class="text-2xl font-fredoka font-bold text-cocoa-800 mb-3">
+                                "The Great Pillow Fort Expedition"
+                            </h3>
+                            <p class="text-cocoa-600 leading-relaxed">
+                                Teddy Bear was always the brave commander of our living room expeditions. 
+                                Together, we built magnificent forts that transported us to distant lands filled with magic and wonder.
+                            </p>
+                        </div>
+                        
+                        <div class="memory-card">
+                            <h3 class="text-2xl font-fredoka font-bold text-cocoa-800 mb-3">
+                                "Bedtime Stories & Sweet Dreams"
+                            </h3>
+                            <p class="text-cocoa-600 leading-relaxed">
+                                Every night, Teddy Bear would listen to bedtime stories and then stay close 
+                                to chase away any monsters hiding in the closet. The best dreams always came with Teddy Bear nearby.
+                            </p>
+                        </div>
+                        
+                        <div class="memory-card">
+                            <h3 class="text-2xl font-fredoka font-bold text-cocoa-800 mb-3">
+                                "Secret Conversations"
+                            </h3>
+                            <p class="text-cocoa-600 leading-relaxed">
+                                Teddy Bear was the keeper of all secrets, the listener of all dreams, 
+                                and the silent companion who understood everything without needing words.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-4">
+                                <div class="h-32 bg-gradient-honey rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
+                                    <img 
+                                        src="https://images.stockcake.com/public/f/0/f/f0ff4566-3500-402d-af50-06b11c866724_large/child-holding-teddy-stockcake.jpg" 
+                                        alt="Teddy bear in sunlight"
+                                        class="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div class="h-64 bg-gradient-cream rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
+                                    <img 
+                                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/568/original/StockCake-Joyful_Daisy_Hug_1748126003.jpg?1748126017" 
+                                        alt="Childhood adventures"
+                                        class="w-full h-full object-cover"
+                                    />
+                                </div>
+                            </div>
+                            <div class="space-y-4 pt-8">
+                                <div class="h-64 bg-gradient-cocoa rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
+                                    <img 
+                                        src="https://images.stockcake.com/public/5/c/3/5c399fd5-92c3-4785-94dd-56a5ddea5a5f_large/child-embracing-teddy-stockcake.jpg" 
+                                        alt="Peaceful moments"
+                                        class="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div class="h-32 bg-gradient-honey rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
+                                    <div class="placeholder-content">
+                                        <div class="text-center">
+                                            <i data-lucide="heart" class="w-12 h-12 mb-2 mx-auto" style="color: var(--honey-600);"></i>
+                                            <p class="text-honey-700 font-fredoka font-semibold">More memories to come...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 bg-white">
+            <div class="container">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-fredoka font-bold text-cocoa-800 mb-6">
+                        Gallery of Joy
+                    </h2>
+                    <p class="text-xl text-cocoa-600 max-w-2xl mx-auto">
+                        A collection of moments that capture the essence of childhood wonder and the 
+                        special bond between a child and their most treasured companion.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3 gap-6">
+                    <div class="gallery-item aspect-square">
+                        <div class="placeholder-content">
+                            <div class="text-center">
+                                <img 
+                                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/567/original/StockCake-Toddler_Playing_Joyfully_1748125781.jpg?1748125866"
+                                    class="w-full object-cover">
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                
+                                <h3 class="font-fredoka font-semibold flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-6 h-6" style="color: var(--honey-600);"></i>
+                                    Adventure 1 </h3>
+                                <p class="text-sm opacity-90">A magical moment captured in time</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item aspect-square">
+                        <div class="placeholder-content">
+                            <div class="text-center">
+                                <img 
+                                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/572/original/StockCake-Joyful_playful_child_1748126239.jpg?1748126248"
+                                    class="w-full object-cover">
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="font-fredoka font-semibold flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-6 h-6" style="color: var(--honey-600);"></i>
+                                    Adventure 2</h3>
+                                <p class="text-sm opacity-90">A magical moment captured in time</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item aspect-square">
+                        <div class="placeholder-content">
+                            <div class="text-center">
+                                <img 
+                                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/573/original/StockCake-Young_Doctor_Play_1748126275.jpg?1748126284"
+                                    class="w-full object-cover">
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="font-fredoka font-semibold flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-6 h-6" style="color: var(--honey-600);"></i>
+                                    Adventure 3</h3>
+                                <p class="text-sm opacity-90">A magical moment captured in time</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item aspect-square">
+                        <div class="placeholder-content">
+                            <div class="text-center">
+                                <img 
+                                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/574/original/StockCake-Child_playing_prayerfully_1748126356.jpg?1748126365"
+                                    class="w-full object-cover">
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="font-fredoka font-semibold flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-6 h-6" style="color: var(--honey-600);"></i>
+                                    Adventure 4</h3>
+                                <p class="text-sm opacity-90">A magical moment captured in time</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item aspect-square">
+                        <div class="placeholder-content">
+                            <div class="text-center">
+                                <img 
+                                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/569/original/StockCake-Child_Toy_Aisle_1748126059.jpg?1748126067"
+                                    class="w-full object-cover">
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="font-fredoka font-semibold flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-6 h-6" style="color: var(--honey-600);"></i>
+                                    Adventure 5</h3>
+                                <p class="text-sm opacity-90">A magical moment captured in time</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item aspect-square">
+                        <div class="placeholder-content">
+                            <div class="text-center">
+                                <img 
+                                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/571/original/StockCake-Cozy_teddy_embrace_1748126195.jpg?1748126202"
+                                    class="w-full object-cover">
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3 class="font-fredoka font-semibold flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-6 h-6" style="color: var(--honey-600);"></i>
+                                    Adventure 6</h3>
+                                <p class="text-sm opacity-90">A magical moment captured in time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-cta relative overflow-hidden">
+            <div class="absolute inset-0 bg-black-10"></div>
+            <div class="container relative">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h2 class="text-5xl lg-text-6xl font-fredoka font-bold text-white mb-6">
+                        Share Your Beloved Toy
+                    </h2>
+                    <p class="text-xl text-cream-100 mb-8 leading-relaxed">
+                        Every childhood toy has a story worth telling. Join our community and share the magic 
+                        of your most cherished companion. Let's celebrate the toys that made us who we are.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-white font-fredoka font-bold">
+                            <i data-lucide="heart" class="w-5 h-5 mr-2"></i>
+                            Submit Your Story
+                        </button>
+                        <button class="btn btn-white-outline font-fredoka">
+                            Browse All Stories
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative elements -->
+            <div class="absolute top-10 left-10 w-8 h-8 bg-white-10 rounded-full animate-float" style="width: 5rem; height: 5rem;"></div>
+            <div class="absolute bottom-10 right-10 w-16 h-16 bg-white-10 rounded-full animate-bounce-gentle"></div>
+            <div class="absolute top-half left-20 w-12 h-12 bg-white-10 rounded-full animate-wiggle"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-12 pb-8 bg-cocoa-800 text-white">
+            <div class="container">
+                <div class="text-center">
+                    <div class="font-fredoka text-3xl font-bold mb-4">
+                        🧸 Teddy Bear
+                    </div>
+                    <p class="text-cocoa-300 mb-6 max-w-3xl mx-auto">
+                        Celebrating the magic of childhood and the toys that fill our hearts with joy, 
+                        one story at a time.
+                    </p>
+                    <div class="mt-4 pt-8 border-t text-cocoa-400 text-sm" style="border-color: var(--cocoa-700);">
+                        Made with ❤️ by Bahareh Viani for the 🧸 Beloved Toy Challenge
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+            }
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.card, .memory-card, .gallery-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+        
+        // Button hover effects
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+        
+        // Gallery item interactions
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Add click animation
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+    </script>
+</body>
+</html>
