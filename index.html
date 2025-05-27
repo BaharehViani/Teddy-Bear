@@ -1111,6 +1111,10 @@
                 flex-direction: row;
             }
         }
+
+        .block {
+            display: block;
+        }
     </style>
 </head>
 <body class="font-inter">
@@ -1167,11 +1171,11 @@
                     </div>
                     <div class="relative animate-scale-in">
                         <div class="relative z-10">
-                            <div class="w-full h-600 bg-gradient-honey rounded-3xl shadow-2xl overflow-hidden hover-scale-103 transition-transform duration-500">
+                            <div class="w-full h-full bg-gradient-honey rounded-3xl shadow-2xl overflow-hidden hover-scale-103 transition-transform duration-500">
                                 <img 
                                     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/570/original/StockCake-Cuddly_Teddy_Bear_1748126150.jpg?1748126160" 
                                     alt="Teddy Bear - A beloved golden teddy bear"
-                                    class="w-full h-full object-cover"
+                                    class="w-full h-full object-cover block"
                                 />
                             </div>
                         </div>
@@ -1289,27 +1293,27 @@
                     <div class="relative">
                         <div class="grid grid-cols-2 gap-4">
                             <div class="space-y-4">
-                                <div class="h-32 bg-gradient-honey rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
+                                <div style="aspect-ratio: 9/4;" class="w-full bg-gradient-honey rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
                                     <img 
                                         src="https://images.stockcake.com/public/f/0/f/f0ff4566-3500-402d-af50-06b11c866724_large/child-holding-teddy-stockcake.jpg" 
                                         alt="Teddy bear in sunlight"
-                                        class="w-full h-full object-cover"
+                                        class="w-full h-full object-cover block"
                                     />
                                 </div>
-                                <div class="h-64 bg-gradient-cream rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
+                                <div style="aspect-ratio: 10/9;" class="w-full bg-gradient-cream rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
                                     <img 
                                         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/568/original/StockCake-Joyful_Daisy_Hug_1748126003.jpg?1748126017" 
                                         alt="Childhood adventures"
-                                        class="w-full h-full object-cover"
+                                        class="w-full h-full object-cover block"
                                     />
                                 </div>
                             </div>
                             <div class="space-y-4 pt-8">
-                                <div class="h-64 bg-gradient-cocoa rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
+                                <div style="aspect-ratio: 10/9;" class="w-full bg-gradient-cocoa rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
                                     <img 
                                         src="https://images.stockcake.com/public/5/c/3/5c399fd5-92c3-4785-94dd-56a5ddea5a5f_large/child-embracing-teddy-stockcake.jpg" 
                                         alt="Peaceful moments"
-                                        class="w-full h-full object-cover"
+                                        class="w-full h-full object-cover block"
                                     />
                                 </div>
                                 <div class="h-32 bg-gradient-honey rounded-2xl overflow-hidden shadow-lg hover-scale-105 transition-transform duration-300">
